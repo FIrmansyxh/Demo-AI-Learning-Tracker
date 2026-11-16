@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 
 import { AILearningEntry, AppUser } from './types';
+import { INITIAL_MOCK_DATA } from './data/mockData';
 
 // Component Imports
 import StatsGrid from './components/StatsGrid';
@@ -198,10 +199,10 @@ export default function App() {
           try {
             setEntries(JSON.parse(stored));
           } catch {
-            setEntries([]);
+            setEntries(INITIAL_MOCK_DATA);
           }
         } else {
-          setEntries([]);
+          setEntries(INITIAL_MOCK_DATA);
         }
       });
   };

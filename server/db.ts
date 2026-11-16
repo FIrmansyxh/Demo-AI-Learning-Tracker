@@ -45,6 +45,8 @@ function getDbFilePath(): string {
 }
 
 export class LocalDatabase {
+  private static memoryCache: DatabaseSchema | null = null;
+
   private static loadRaw(): DatabaseSchema {
     const defaultUsers = [
       {
@@ -64,6 +66,9 @@ export class LocalDatabase {
 
     const dbFilePath = getDbFilePath();
     if (!fs.existsSync(dbFilePath)) {
+      if (this.memoryCache) {
+        return this.memoryCache;
+      }
       const bundled = getBundledSeedDb();
       const defaultDb: DatabaseSchema =
         bundled && Array.isArray(bundled.users) && bundled.users.length > 0
@@ -73,6 +78,7 @@ export class LocalDatabase {
               entries: INITIAL_MOCK_DATA,
               articles: INITIAL_ARTICLES
             };
+      this.memoryCache = defaultDb;
       try {
         fs.writeFileSync(dbFilePath, JSON.stringify(defaultDb, null, 2), 'utf-8');
       } catch (err) {
@@ -186,14 +192,23 @@ export class LocalDatabase {
         }
       }
 
+      this.memoryCache = parsed;
       return parsed;
     } catch (e) {
-      console.error('Error reading database file, using fallback and re-writing.', e);
-      const fallbackDb: DatabaseSchema = {
-        users: defaultUsers,
-        entries: INITIAL_MOCK_DATA,
-        articles: INITIAL_ARTICLES
-      };
+      if (this.memoryCache) {
+        return this.memoryCache;
+      }
+      console.error('Error reading database file, using bundled seed fallback.', e);
+      const bundled = getBundledSeedDb();
+      const fallbackDb: DatabaseSchema =
+        bundled && Array.isArray(bundled.users) && bundled.users.length > 0
+          ? bundled
+          : {
+              users: defaultUsers,
+              entries: INITIAL_MOCK_DATA,
+              articles: INITIAL_ARTICLES
+            };
+      this.memoryCache = fallbackDb;
       try {
         fs.writeFileSync(dbFilePath, JSON.stringify(fallbackDb, null, 2), 'utf-8');
       } catch (err) {
@@ -204,6 +219,7 @@ export class LocalDatabase {
   }
 
   private static saveRaw(data: DatabaseSchema) {
+    this.memoryCache = data;
     const dbFilePath = getDbFilePath();
     try {
       fs.writeFileSync(dbFilePath, JSON.stringify(data, null, 2), 'utf-8');
