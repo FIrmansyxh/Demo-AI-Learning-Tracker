@@ -26,7 +26,7 @@ const INITIAL_ARTICLES: Article[] = [
     title: 'Tutorial Setup AI Skill di Claude & Gemini AI Studio',
     category: 'Tutorial Setup Skill',
     createdAt: '2026-06-25',
-    author: 'AFIF MUSYAYYIDIN',
+    author: 'RAFI FIRMANSYAH',
     imageUrl: '/images/article_skill_setup.jpg',
     content: `### Panduan Praktis Integrasi AI Skill di Workspace Anda
 
@@ -42,7 +42,7 @@ Selamat datang di tutorial setup AI Skill! Dalam artikel ini, kita akan mempelaj
     title: 'Update AI Terbaru: Era Agentic AI dan Otomatisasi Pekerjaan',
     category: 'Update AI',
     createdAt: '2026-06-26',
-    author: 'MUHAMMAD RIFQY PRATAMA',
+    author: 'REVAN RAMADHAN',
     imageUrl: '/images/article_ai_agents.jpg',
     content: `### Mengapa Agentic AI Menjadi Standar Baru Industri Tech?
 
@@ -239,7 +239,7 @@ export default function ArticlesView({ currentUser }: { currentUser?: AppUser | 
 
   const [formTitle, setFormTitle] = useState('');
   const [formCategory, setFormCategory] = useState('Update AI');
-  const [formAuthor, setFormAuthor] = useState('AFIF MUSYAYYIDIN');
+  const [formAuthor, setFormAuthor] = useState('RAFI FIRMANSYAH');
   const [formContent, setFormContent] = useState('');
   const [formImageUrl, setFormImageUrl] = useState('');
   const [formErrors, setFormErrors] = useState<{ [key: string]: string }>({});
@@ -348,7 +348,7 @@ export default function ArticlesView({ currentUser }: { currentUser?: AppUser | 
         }
       })
       .catch(() => {
-        const stored = localStorage.getItem('vascomm_ai_tracker_articles');
+        const stored = localStorage.getItem('degree_ai_tracker_articles');
         if (stored) {
           try {
             setArticles(JSON.parse(stored) as Article[]);
@@ -363,7 +363,7 @@ export default function ArticlesView({ currentUser }: { currentUser?: AppUser | 
 
   const saveArticles = async (updated: Article[]) => {
     try {
-      localStorage.setItem('vascomm_ai_tracker_articles', JSON.stringify(updated));
+      localStorage.setItem('degree_ai_tracker_articles', JSON.stringify(updated));
       setArticles(updated);
 
       await fetch('/api/articles/save-all', {
@@ -496,7 +496,7 @@ export default function ArticlesView({ currentUser }: { currentUser?: AppUser | 
   const handleOpenCreate = () => {
     setFormTitle('');
     setFormCategory('Update AI');
-    setFormAuthor(currentUser?.name || EMPLOYEES[0]?.nama || 'AFIF MUSYAYYIDIN');
+    setFormAuthor(currentUser?.name || EMPLOYEES[0]?.nama || 'RAFI FIRMANSYAH');
     setFormImageUrl('');
     setFormContent(
       `### Ringkasan Topik\n\nTulis penjelasan utama Anda di sini.\n\n#### Langkah Implementasi:\n- Langkah pertama\n- Langkah kedua\n\n> Catatan penting atau tips penerapan di divisi.`
@@ -830,7 +830,7 @@ export default function ArticlesView({ currentUser }: { currentUser?: AppUser | 
                     <p className="text-sm font-semibold text-slate-900 dark:text-white truncate">
                       {viewingArticle.author}
                     </p>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">Kontributor Vascomm</p>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">Kontributor Degree</p>
                   </div>
                 </div>
 

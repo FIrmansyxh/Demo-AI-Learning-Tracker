@@ -130,16 +130,17 @@ Proyek ini telah dikonfigurasi lengkap dengan `vercel.json` dan serverless API (
 
 ---
 
-## 🔑 Kredensial Akun Default (Super Admin)
+## 🔑 Kredensial Akun Default (Demo)
 
-| Peran (Role) | Email / Username | Password Default | Akses Hak |
+| Peran (Role) | Username / Email | Password Default | Akses Hak |
 |---|---|---|---|
-| **Super Admin** | `admin@vascomm.co.id` / `Super Admin` | `Superadmin@11` | Akses Penuh (Portal Admin & Portal Karyawan, Kelola Pengguna, Settings) |
+| **Super Admin** | `admin` / `admin@degree.co.id` | `Superadmin@11` | Akses Penuh (Portal Admin & Portal Karyawan, Kelola Pengguna, Settings) |
+| **Karyawan** | `bintang.pradipta` / `bintang.pradipta@degree.co.id` | `Degree@2026` | Input Laporan, Lihat Daftar Laporan, Hapus Laporan Milik Sendiri, Artikel AI |
 
-*Catatan: Seluruh data contoh laporan, artikel, dan akun pengujian lainnya telah dibersihkan sehingga siap untuk diisi manual oleh tim Anda.*
+*Catatan: Repositori ini menyertakan `database.json` berisi 101 akun pengguna anonim, 255 entri laporan pembelajaran AI, 8 artikel panduan, dan pengaturan divisi yang otomatis termuat saat dijalankan secara lokal maupun dideploy ke Vercel.*
 
 ---
 
 ## 📄 Lisensi
 
-Hak Cipta © 2026 Vascomm. All Rights Reserved.
+Hak Cipta © 2026 Degree. All Rights Reserved.

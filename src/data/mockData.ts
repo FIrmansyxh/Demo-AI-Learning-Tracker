@@ -9,7 +9,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0214",
     "tanggalIsi": "2026-11-15",
-    "nama": "Rosalia Herlina S",
+    "nama": "Salsa Anggita",
     "divisi": "MARKETING",
     "posisiJabatan": "B2B Partnership Specialist",
     "aiYangDipakai": "Cursor",
@@ -24,7 +24,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0215",
     "tanggalIsi": "2026-11-15",
-    "nama": "Muhammad Rifqy Pratama",
+    "nama": "Revan Ramadhan",
     "divisi": "MARKETING",
     "posisiJabatan": "Content Writer",
     "aiYangDipakai": "ChatGPT",
@@ -339,7 +339,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0236",
     "tanggalIsi": "2026-11-15",
-    "nama": "Sukma Puspaning Maharupi",
+    "nama": "Keisha Amara",
     "divisi": "HCM",
     "posisiJabatan": "HC Assistant",
     "aiYangDipakai": "Claude",
@@ -624,7 +624,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0213",
     "tanggalIsi": "2026-11-14",
-    "nama": "Muhammad Areqson Hertin",
+    "nama": "Hafiz Rayhan",
     "divisi": "MARKETING",
     "posisiJabatan": "Staff SEM Product",
     "aiYangDipakai": "Gemini",
@@ -639,7 +639,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0255",
     "tanggalIsi": "2026-11-14",
-    "nama": "Bella Norma Audina",
+    "nama": "Nadine Larissa",
     "divisi": "MARKETING",
     "posisiJabatan": "Lead Digital Marketing",
     "aiYangDipakai": "ChatGPT",
@@ -684,7 +684,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0212",
     "tanggalIsi": "2026-11-13",
-    "nama": "Rizky Jelang Ramadhani",
+    "nama": "Dito Wicaksono",
     "divisi": "MARKETING",
     "posisiJabatan": "Digital Strategist",
     "aiYangDipakai": "Claude",
@@ -699,7 +699,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0254",
     "tanggalIsi": "2026-11-13",
-    "nama": "Renaldy Gatan Pramana",
+    "nama": "Aldi Kurnia",
     "divisi": "ISS",
     "posisiJabatan": "Lead SysOps Administrator",
     "aiYangDipakai": "Cursor",
@@ -759,7 +759,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0253",
     "tanggalIsi": "2026-11-12",
-    "nama": "Mochammad Nizar Normansyah",
+    "nama": "Bramantyo Kusumo",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Lead Project Management",
     "aiYangDipakai": "Gemini",
@@ -999,7 +999,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0177",
     "tanggalIsi": "2026-11-06",
-    "nama": "Pramudia Angga Prahasta",
+    "nama": "Pramudya Hartanto",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Mobile Engineer",
     "aiYangDipakai": "Gemini",
@@ -1044,7 +1044,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0176",
     "tanggalIsi": "2026-11-05",
-    "nama": "Qolbu Dzikru Rosyadi",
+    "nama": "Zidan Alfarizi",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Frontend Web Engineer",
     "aiYangDipakai": "Claude",
@@ -1089,7 +1089,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0175",
     "tanggalIsi": "2026-11-04",
-    "nama": "Yusril Bagas Panji",
+    "nama": "Panji Baskoro",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Junior Backend Developer",
     "aiYangDipakai": "ChatGPT",
@@ -1134,7 +1134,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0174",
     "tanggalIsi": "2026-11-03",
-    "nama": "Muhammad Afifudin",
+    "nama": "Damar Suryanto",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Backend Developer",
     "aiYangDipakai": "Cursor",
@@ -1179,7 +1179,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0173",
     "tanggalIsi": "2026-11-02",
-    "nama": "Afif Musyayyidin",
+    "nama": "Rafi Firmansyah",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Senior Backend Engineer",
     "aiYangDipakai": "Gemini",
@@ -1224,7 +1224,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0172",
     "tanggalIsi": "2026-11-01",
-    "nama": "Ian Ahmad Pramana",
+    "nama": "Bintang Pradipta",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Lead FE (Frontend)",
     "aiYangDipakai": "Claude",
@@ -1254,7 +1254,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0200",
     "tanggalIsi": "2026-11-01",
-    "nama": "Kurniawan Ramadhan Jaya Purnomo",
+    "nama": "Raditya Maheswara",
     "divisi": "ISS",
     "posisiJabatan": "SysOps Engineer",
     "aiYangDipakai": "Claude",
@@ -1404,7 +1404,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0163",
     "tanggalIsi": "2026-10-15",
-    "nama": "Sukma Puspaning Maharupi",
+    "nama": "Keisha Amara",
     "divisi": "HCM",
     "posisiJabatan": "HC Assistant",
     "aiYangDipakai": "DeepSeek",
@@ -1494,7 +1494,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0170",
     "tanggalIsi": "2026-10-09",
-    "nama": "Qolbu Dzikru Rosyadi",
+    "nama": "Zidan Alfarizi",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Frontend Web Engineer",
     "aiYangDipakai": "Claude",
@@ -1524,7 +1524,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0169",
     "tanggalIsi": "2026-10-06",
-    "nama": "Muh. Aunu Rofiq",
+    "nama": "Arman Syahputra",
     "divisi": "HCM",
     "posisiJabatan": "HC Strategist",
     "aiYangDipakai": "DeepSeek",
@@ -1719,7 +1719,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0134",
     "tanggalIsi": "2026-09-11",
-    "nama": "Afif Musyayyidin",
+    "nama": "Rafi Firmansyah",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Senior Backend Engineer",
     "aiYangDipakai": "Canva AI",
@@ -1749,7 +1749,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0133",
     "tanggalIsi": "2026-09-08",
-    "nama": "Mochammad Nizar Normansyah",
+    "nama": "Bramantyo Kusumo",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Lead Project Management",
     "aiYangDipakai": "v0 by Vercel",
@@ -1764,7 +1764,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0142",
     "tanggalIsi": "2026-09-08",
-    "nama": "Muhammad Areqson Hertin",
+    "nama": "Hafiz Rayhan",
     "divisi": "MARKETING",
     "posisiJabatan": "Staff SEM Product",
     "aiYangDipakai": "v0 by Vercel",
@@ -1914,7 +1914,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0119",
     "tanggalIsi": "2026-08-19",
-    "nama": "Yusril Bagas Panji",
+    "nama": "Panji Baskoro",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Junior Backend Developer",
     "aiYangDipakai": "Cursor",
@@ -1944,7 +1944,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0118",
     "tanggalIsi": "2026-08-16",
-    "nama": "Bella Norma Audina",
+    "nama": "Nadine Larissa",
     "divisi": "MARKETING",
     "posisiJabatan": "Lead Digital Marketing",
     "aiYangDipakai": "Gemini",
@@ -1959,7 +1959,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0127",
     "tanggalIsi": "2026-08-16",
-    "nama": "Muhammad Rifqy Pratama",
+    "nama": "Revan Ramadhan",
     "divisi": "MARKETING",
     "posisiJabatan": "Content Writer",
     "aiYangDipakai": "Gemini",
@@ -2049,7 +2049,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0124",
     "tanggalIsi": "2026-08-07",
-    "nama": "Kurniawan Ramadhan Jaya Purnomo",
+    "nama": "Raditya Maheswara",
     "divisi": "ISS",
     "posisiJabatan": "SysOps Engineer",
     "aiYangDipakai": "Gemini",
@@ -2124,7 +2124,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0102",
     "tanggalIsi": "2026-07-27",
-    "nama": "Pramudia Angga Prahasta",
+    "nama": "Pramudya Hartanto",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Mobile Engineer",
     "aiYangDipakai": "Cursor",
@@ -2154,7 +2154,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0101",
     "tanggalIsi": "2026-07-24",
-    "nama": "Ian Ahmad Pramana",
+    "nama": "Bintang Pradipta",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Lead FE (Frontend)",
     "aiYangDipakai": "Gemini",
@@ -2199,7 +2199,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0109",
     "tanggalIsi": "2026-07-21",
-    "nama": "Rizky Jelang Ramadhani",
+    "nama": "Dito Wicaksono",
     "divisi": "MARKETING",
     "posisiJabatan": "Digital Strategist",
     "aiYangDipakai": "ChatGPT",
@@ -2649,7 +2649,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0085",
     "tanggalIsi": "2026-06-05",
-    "nama": "Muhammad Afifudin",
+    "nama": "Damar Suryanto",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Backend Developer",
     "aiYangDipakai": "Claude",
@@ -2679,7 +2679,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0084",
     "tanggalIsi": "2026-06-02",
-    "nama": "Renaldy Gatan Pramana",
+    "nama": "Aldi Kurnia",
     "divisi": "ISS",
     "posisiJabatan": "Lead SysOps Administrator",
     "aiYangDipakai": "GitHub Copilot",
@@ -2694,7 +2694,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0093",
     "tanggalIsi": "2026-06-02",
-    "nama": "Rosalia Herlina S",
+    "nama": "Salsa Anggita",
     "divisi": "MARKETING",
     "posisiJabatan": "B2B Partnership Specialist",
     "aiYangDipakai": "GitHub Copilot",
@@ -2769,7 +2769,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0063",
     "tanggalIsi": "2026-05-19",
-    "nama": "Sukma Puspaning Maharupi",
+    "nama": "Keisha Amara",
     "divisi": "HCM",
     "posisiJabatan": "HC Assistant",
     "aiYangDipakai": "Midjourney",
@@ -2844,7 +2844,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0070",
     "tanggalIsi": "2026-05-13",
-    "nama": "Qolbu Dzikru Rosyadi",
+    "nama": "Zidan Alfarizi",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Frontend Web Engineer",
     "aiYangDipakai": "v0 by Vercel",
@@ -2874,7 +2874,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0069",
     "tanggalIsi": "2026-05-10",
-    "nama": "Muh. Aunu Rofiq",
+    "nama": "Arman Syahputra",
     "divisi": "HCM",
     "posisiJabatan": "HC Strategist",
     "aiYangDipakai": "Midjourney",
@@ -3084,7 +3084,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0052",
     "tanggalIsi": "2026-04-18",
-    "nama": "Afif Musyayyidin",
+    "nama": "Rafi Firmansyah",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Senior Backend Engineer",
     "aiYangDipakai": "Perplexity",
@@ -3114,7 +3114,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0051",
     "tanggalIsi": "2026-04-15",
-    "nama": "Mochammad Nizar Normansyah",
+    "nama": "Bramantyo Kusumo",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Lead Project Management",
     "aiYangDipakai": "Claude",
@@ -3129,7 +3129,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0041",
     "tanggalIsi": "2026-04-12",
-    "nama": "Muhammad Areqson Hertin",
+    "nama": "Hafiz Rayhan",
     "divisi": "MARKETING",
     "posisiJabatan": "Staff SEM Product",
     "aiYangDipakai": "ChatGPT",
@@ -3294,7 +3294,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0036",
     "tanggalIsi": "2026-03-26",
-    "nama": "Yusril Bagas Panji",
+    "nama": "Panji Baskoro",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Junior Backend Developer",
     "aiYangDipakai": "DeepSeek",
@@ -3324,7 +3324,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0035",
     "tanggalIsi": "2026-03-23",
-    "nama": "Bella Norma Audina",
+    "nama": "Nadine Larissa",
     "divisi": "MARKETING",
     "posisiJabatan": "Lead Digital Marketing",
     "aiYangDipakai": "ChatGPT",
@@ -3339,7 +3339,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0025",
     "tanggalIsi": "2026-03-20",
-    "nama": "Muhammad Rifqy Pratama",
+    "nama": "Revan Ramadhan",
     "divisi": "MARKETING",
     "posisiJabatan": "Content Writer",
     "aiYangDipakai": "Gemini",
@@ -3429,7 +3429,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0022",
     "tanggalIsi": "2026-03-11",
-    "nama": "Kurniawan Ramadhan Jaya Purnomo",
+    "nama": "Raditya Maheswara",
     "divisi": "ISS",
     "posisiJabatan": "SysOps Engineer",
     "aiYangDipakai": "Gemini",
@@ -3564,7 +3564,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0009",
     "tanggalIsi": "2026-02-25",
-    "nama": "Rizky Jelang Ramadhani",
+    "nama": "Dito Wicaksono",
     "divisi": "MARKETING",
     "posisiJabatan": "Digital Strategist",
     "aiYangDipakai": "ChatGPT",
@@ -3774,7 +3774,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0002",
     "tanggalIsi": "2026-02-04",
-    "nama": "Pramudia Angga Prahasta",
+    "nama": "Pramudya Hartanto",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Mobile Engineer",
     "aiYangDipakai": "Cursor",
@@ -3804,7 +3804,7 @@ export const INITIAL_MOCK_DATA: AILearningEntry[] = [
   {
     "id": "tr-0001",
     "tanggalIsi": "2026-02-01",
-    "nama": "Ian Ahmad Pramana",
+    "nama": "Bintang Pradipta",
     "divisi": "IT SOLUTION",
     "posisiJabatan": "Lead FE (Frontend)",
     "aiYangDipakai": "Gemini",

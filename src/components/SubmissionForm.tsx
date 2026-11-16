@@ -398,7 +398,7 @@ export default function SubmissionForm({
             Laporan Berhasil Tersimpan
           </h4>
           <p className="text-sm text-slate-600 dark:text-slate-400 mt-1.5 max-w-sm leading-relaxed">
-            Data pembelajaran AI Anda telah dicatat dan disinkronkan ke sistem Vascomm.
+            Data pembelajaran AI Anda telah dicatat dan disinkronkan ke sistem Degree.
           </p>
         </motion.div>
       )}

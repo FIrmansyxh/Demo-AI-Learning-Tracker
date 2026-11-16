@@ -495,7 +495,7 @@ export async function createQASpreadsheet(accessToken: string): Promise<string> 
                 values: [
                   {
                     userEnteredFormat: {
-                      backgroundColor: { red: 0.08, green: 0.36, blue: 0.35 }, // Vascomm Dark Teal
+                      backgroundColor: { red: 0.08, green: 0.36, blue: 0.35 }, // Degree Dark Teal
                       textFormat: {
                         fontFamily: 'Roboto',
                         fontSize: 14,

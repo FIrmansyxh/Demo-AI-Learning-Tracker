@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { Article, AILearningEntry, AppUser } from '../src/types';
 import { INITIAL_MOCK_DATA } from '../src/data/mockData';
+import seedDatabase from '../database.json';
 
 // Initial default articles
 const INITIAL_ARTICLES: Article[] = [];
@@ -19,13 +20,21 @@ export interface DatabaseSchema {
   settings?: SystemSettings;
 }
 
+function getBundledSeedDb(): DatabaseSchema {
+  return JSON.parse(JSON.stringify(seedDatabase)) as DatabaseSchema;
+}
+
 function getDbFilePath(): string {
   const rootDbPath = path.join(process.cwd(), 'database.json');
   if (process.env.VERCEL || process.env.NODE_ENV === 'production') {
     try {
       const tmpDbPath = path.join('/tmp', 'database.json');
-      if (!fs.existsSync(tmpDbPath) && fs.existsSync(rootDbPath)) {
-        fs.copyFileSync(rootDbPath, tmpDbPath);
+      if (!fs.existsSync(tmpDbPath)) {
+        if (fs.existsSync(rootDbPath)) {
+          fs.copyFileSync(rootDbPath, tmpDbPath);
+        } else {
+          fs.writeFileSync(tmpDbPath, JSON.stringify(getBundledSeedDb(), null, 2), 'utf-8');
+        }
       }
       return tmpDbPath;
     } catch (err) {
@@ -46,7 +55,7 @@ export class LocalDatabase {
         password: 'Superadmin@11',
         division: 'IT SOLUTION',
         position: 'Lead Admin',
-        email: 'admin@vascomm.co.id',
+        email: 'admin@degree.co.id',
         joinDate: '2026-01-01',
         status: 'active' as const,
         passwordResetRequest: 'none' as const
@@ -55,11 +64,15 @@ export class LocalDatabase {
 
     const dbFilePath = getDbFilePath();
     if (!fs.existsSync(dbFilePath)) {
-      const defaultDb: DatabaseSchema = {
-        users: defaultUsers,
-        entries: INITIAL_MOCK_DATA,
-        articles: INITIAL_ARTICLES
-      };
+      const bundled = getBundledSeedDb();
+      const defaultDb: DatabaseSchema =
+        bundled && Array.isArray(bundled.users) && bundled.users.length > 0
+          ? bundled
+          : {
+              users: defaultUsers,
+              entries: INITIAL_MOCK_DATA,
+              articles: INITIAL_ARTICLES
+            };
       try {
         fs.writeFileSync(dbFilePath, JSON.stringify(defaultDb, null, 2), 'utf-8');
       } catch (err) {
@@ -88,7 +101,7 @@ export class LocalDatabase {
         let newDiv = oldDiv.trim();
         if (
           !newDiv ||
-          newDiv === 'Vascomm Division' ||
+          newDiv === 'Degree Division' ||
           newDiv === 'IT Support' ||
           newDiv === 'Operations' ||
           newDiv === 'IT / Management' ||
@@ -119,7 +132,7 @@ export class LocalDatabase {
         }
 
         if (!u.position) { u.position = (u.role === 'admin' || u.role === 'superadmin') ? 'Lead Admin' : 'Karyawan'; changed = true; }
-        if (!u.email) { u.email = `${u.username}@vascomm.co.id`; changed = true; }
+        if (!u.email) { u.email = `${u.username}@degree.co.id`; changed = true; }
         if (!u.joinDate) { u.joinDate = '2026-06-01'; changed = true; }
         if (changed) migrated = true;
         return u;
@@ -132,7 +145,7 @@ export class LocalDatabase {
           let newDiv = oldDiv.trim();
           if (
             !newDiv ||
-            newDiv === 'Vascomm Division' ||
+            newDiv === 'Degree Division' ||
             newDiv === 'IT Support' ||
             newDiv === 'Operations' ||
             newDiv === 'IT / Management' ||

@@ -39,7 +39,7 @@ export default function ChartsView({ entries, isDark = false }: ChartsViewProps)
   const divisionChartData = useMemo(() => {
     const divData: { [key: string]: { name: string; totalHours: number; count: number } } = {};
     entries.forEach(e => {
-      const div = e.divisi || 'Vascomm';
+      const div = e.divisi || 'Degree';
       if (!divData[div]) {
         divData[div] = { name: div, totalHours: 0, count: 0 };
       }
@@ -73,7 +73,7 @@ export default function ChartsView({ entries, isDark = false }: ChartsViewProps)
       const parts = e.tanggalIsi.split('-');
       if (parts.length < 2) return;
       const yearMonth = `${parts[0]}-${parts[1]}`;
-      const div = e.divisi || 'Vascomm';
+      const div = e.divisi || 'Degree';
       uniqueDivisions.add(div);
 
       if (!grouped[yearMonth]) grouped[yearMonth] = {};

@@ -11,37 +11,37 @@ export interface Employee {
 
 export const EMPLOYEES: Employee[] = [
   {
-    "nama": "Mochammad Nizar Normansyah",
+    "nama": "Bramantyo Kusumo",
     "divisi": "IT SOLUTION",
     "defaultPosisi": "Lead Project Management"
   },
   {
-    "nama": "Ian Ahmad Pramana",
+    "nama": "Bintang Pradipta",
     "divisi": "IT SOLUTION",
     "defaultPosisi": "Lead FE (Frontend)"
   },
   {
-    "nama": "Afif Musyayyidin",
+    "nama": "Rafi Firmansyah",
     "divisi": "IT SOLUTION",
     "defaultPosisi": "Senior Backend Engineer"
   },
   {
-    "nama": "Muhammad Afifudin",
+    "nama": "Damar Suryanto",
     "divisi": "IT SOLUTION",
     "defaultPosisi": "Backend Developer"
   },
   {
-    "nama": "Yusril Bagas Panji",
+    "nama": "Panji Baskoro",
     "divisi": "IT SOLUTION",
     "defaultPosisi": "Junior Backend Developer"
   },
   {
-    "nama": "Qolbu Dzikru Rosyadi",
+    "nama": "Zidan Alfarizi",
     "divisi": "IT SOLUTION",
     "defaultPosisi": "Frontend Web Engineer"
   },
   {
-    "nama": "Pramudia Angga Prahasta",
+    "nama": "Pramudya Hartanto",
     "divisi": "IT SOLUTION",
     "defaultPosisi": "Mobile Engineer"
   },
@@ -161,12 +161,12 @@ export const EMPLOYEES: Employee[] = [
     "defaultPosisi": "Cloud Backend Engineer"
   },
   {
-    "nama": "Renaldy Gatan Pramana",
+    "nama": "Aldi Kurnia",
     "divisi": "ISS",
     "defaultPosisi": "Lead SysOps Administrator"
   },
   {
-    "nama": "Kurniawan Ramadhan Jaya Purnomo",
+    "nama": "Raditya Maheswara",
     "divisi": "ISS",
     "defaultPosisi": "SysOps Engineer"
   },
@@ -231,27 +231,27 @@ export const EMPLOYEES: Employee[] = [
     "defaultPosisi": "Technical Support Lead"
   },
   {
-    "nama": "Bella Norma Audina",
+    "nama": "Nadine Larissa",
     "divisi": "MARKETING",
     "defaultPosisi": "Lead Digital Marketing"
   },
   {
-    "nama": "Rizky Jelang Ramadhani",
+    "nama": "Dito Wicaksono",
     "divisi": "MARKETING",
     "defaultPosisi": "Digital Strategist"
   },
   {
-    "nama": "Muhammad Areqson Hertin",
+    "nama": "Hafiz Rayhan",
     "divisi": "MARKETING",
     "defaultPosisi": "Staff SEM Product"
   },
   {
-    "nama": "Rosalia Herlina S",
+    "nama": "Salsa Anggita",
     "divisi": "MARKETING",
     "defaultPosisi": "B2B Partnership Specialist"
   },
   {
-    "nama": "Muhammad Rifqy Pratama",
+    "nama": "Revan Ramadhan",
     "divisi": "MARKETING",
     "defaultPosisi": "Content Writer"
   },
@@ -361,12 +361,12 @@ export const EMPLOYEES: Employee[] = [
     "defaultPosisi": "Budgeting & Forecasting"
   },
   {
-    "nama": "Muh. Aunu Rofiq",
+    "nama": "Arman Syahputra",
     "divisi": "HCM",
     "defaultPosisi": "HC Strategist"
   },
   {
-    "nama": "Sukma Puspaning Maharupi",
+    "nama": "Keisha Amara",
     "divisi": "HCM",
     "defaultPosisi": "HC Assistant"
   },

@@ -300,7 +300,7 @@ export default function UserManagementView({ currentUser }: UserManagementViewPr
       role: newRole,
       division: newDivision,
       position: newPosition,
-      email: newEmail.trim() || `${derivedUsername}@vascomm.co.id`,
+      email: newEmail.trim() || `${derivedUsername}@degree.co.id`,
       joinDate: new Date().toISOString().split('T')[0],
       status: 'active',
       passwordResetRequest: 'none'
@@ -486,7 +486,7 @@ export default function UserManagementView({ currentUser }: UserManagementViewPr
                   </div>
                 </div>
                 <span className="text-xs font-mono font-semibold text-slate-900 dark:text-white bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-2.5 py-1 rounded-md select-all shrink-0">
-                  {u.password || 'Vascomm@2026'}
+                  {u.password || 'Degree@2026'}
                 </span>
               </div>
             ))}
@@ -596,7 +596,7 @@ export default function UserManagementView({ currentUser }: UserManagementViewPr
                         )}
                       </div>
                       <div className="text-xs text-slate-500 dark:text-slate-400 font-mono mt-0.5">
-                        {user.email || `${user.username}@vascomm.co.id`}
+                        {user.email || `${user.username}@degree.co.id`}
                       </div>
                     </td>
 
@@ -771,7 +771,7 @@ export default function UserManagementView({ currentUser }: UserManagementViewPr
               <div>
                 <p className="text-sm font-semibold text-slate-900 dark:text-white">{editingUser.name}</p>
                 <p className="text-xs text-slate-500 dark:text-slate-400 font-mono">
-                  {editingUser.email || `${editingUser.username}@vascomm.co.id`}
+                  {editingUser.email || `${editingUser.username}@degree.co.id`}
                 </p>
               </div>
 
@@ -867,7 +867,7 @@ export default function UserManagementView({ currentUser }: UserManagementViewPr
                       setNewUsername(e.target.value.split('@')[0]);
                     }
                   }}
-                  placeholder="nama@vascomm.co.id"
+                  placeholder="nama@degree.co.id"
                   className="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg py-2 px-3 text-sm text-slate-900 dark:text-white focus:outline-hidden focus:border-teal-600"
                 />
               </div>

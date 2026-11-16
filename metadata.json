@@ -1,6 +1,6 @@
 {
-  "name": "Demo Vascomm AI Learning Tracker",
-  "description": "Platform dashboard interaktif untuk memigrasikan data pelacakan pembelajaran AI karyawan Sitamoto Division dari spreadsheet manual ke sistem website.",
+  "name": "Demo Degree AI Learning Tracker",
+  "description": "Platform dashboard interaktif untuk pelacakan pembelajaran AI karyawan Degree lintas divisi.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

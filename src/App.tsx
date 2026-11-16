@@ -40,17 +40,17 @@ type ActiveTab = 'dashboard' | 'laporan' | 'tabel' | 'artikel' | 'users' | 'kepa
 
 export default function App() {
   const [isDark, setIsDark] = useState<boolean>(() => {
-    const saved = localStorage.getItem('vascomm_theme');
+    const saved = localStorage.getItem('degree_theme');
     return saved === 'dark';
   });
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isDark);
-    localStorage.setItem('vascomm_theme', isDark ? 'dark' : 'light');
+    localStorage.setItem('degree_theme', isDark ? 'dark' : 'light');
   }, [isDark]);
 
   const [currentUser, setCurrentUser] = useState<AppUser | null>(() => {
-    const stored = localStorage.getItem('vascomm_tracker_current_user');
+    const stored = localStorage.getItem('degree_tracker_current_user');
     if (stored) {
       try {
         return JSON.parse(stored);
@@ -122,7 +122,7 @@ export default function App() {
   }, [entries, timeFilter]);
 
   const [portalMode, setPortalMode] = useState<'karyawan' | 'analis'>(() => {
-    const stored = localStorage.getItem('vascomm_tracker_current_user');
+    const stored = localStorage.getItem('degree_tracker_current_user');
     if (stored) {
       try {
         const parsed = JSON.parse(stored);
@@ -135,7 +135,7 @@ export default function App() {
   });
 
   const [activeTab, setActiveTab] = useState<ActiveTab>(() => {
-    const stored = localStorage.getItem('vascomm_tracker_current_user');
+    const stored = localStorage.getItem('degree_tracker_current_user');
     if (stored) {
       try {
         const parsed = JSON.parse(stored);
@@ -193,7 +193,7 @@ export default function App() {
       })
       .catch((err) => {
         console.error('Failed to load entries from server db, falling back to localStorage.', err);
-        const stored = localStorage.getItem('vascomm_ai_tracker_data');
+        const stored = localStorage.getItem('degree_ai_tracker_data');
         if (stored) {
           try {
             setEntries(JSON.parse(stored));
@@ -256,7 +256,7 @@ export default function App() {
     }));
 
     setEntries(sanitized);
-    localStorage.setItem('vascomm_ai_tracker_data', JSON.stringify(sanitized));
+    localStorage.setItem('degree_ai_tracker_data', JSON.stringify(sanitized));
 
     try {
       if (deleteId) {
@@ -382,7 +382,7 @@ export default function App() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.setAttribute('href', url);
-    link.setAttribute('download', `Vascomm_AI_Learning_Tracker_${new Date().toISOString().split('T')[0]}.csv`);
+    link.setAttribute('download', `Degree_AI_Learning_Tracker_${new Date().toISOString().split('T')[0]}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -400,7 +400,7 @@ export default function App() {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('vascomm_tracker_current_user');
+    localStorage.removeItem('degree_tracker_current_user');
     setCurrentUser(null);
     setMobileMenuOpen(false);
   };
@@ -422,7 +422,7 @@ export default function App() {
     .filter(Boolean)
     .slice(0, 2)
     .map((part) => part[0]?.toUpperCase() ?? '')
-    .join('') || 'VC';
+    .join('') || 'DG';
 
   const navigateTo = (tab: ActiveTab) => {
     setActiveTab(tab);
@@ -532,7 +532,7 @@ export default function App() {
           </div>
           <div className="min-w-0">
             <div className="font-display font-bold text-sm text-slate-900 dark:text-white tracking-tight truncate">
-              Vascomm
+              Degree
             </div>
             <div className="text-xs text-slate-500 dark:text-slate-400 truncate">
               AI Learning Tracker
@@ -879,7 +879,7 @@ export default function App() {
         {/* Minimal Footer */}
         <footer className="border-t border-slate-200/80 dark:border-slate-800 py-4 px-4 sm:px-6 lg:px-8 text-xs text-slate-500 dark:text-slate-400 shrink-0">
           <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-2">
-            <span>Vascomm AI Learning Tracker</span>
+            <span>Degree AI Learning Tracker</span>
             <span>Portal Pembelajaran &amp; Produktivitas Internal</span>
           </div>
         </footer>

@@ -44,8 +44,8 @@ const DEMO_ROLES = [
     id: 'demo-karyawan',
     label: 'Karyawan',
     roleDesc: 'Input Laporan & Artikel AI',
-    username: 'ian.pramana',
-    password: 'Vascomm@2026'
+    username: 'bintang.pradipta',
+    password: 'Degree@2026'
   }
 ];
 
@@ -58,20 +58,20 @@ const FALLBACK_DEMO_USERS: Array<AppUser & { password?: string }> = [
     password: 'Superadmin@11',
     division: 'IT SOLUTION',
     position: 'Lead Admin',
-    email: 'admin@vascomm.co.id',
+    email: 'admin@degree.co.id',
     joinDate: '2026-01-01',
     status: 'active',
     passwordResetRequest: 'none'
   },
   {
     id: 'usr-002',
-    username: 'ian.pramana',
-    name: 'Ian Ahmad Pramana',
+    username: 'bintang.pradipta',
+    name: 'Bintang Pradipta',
     role: 'karyawan',
-    password: 'Vascomm@2026',
+    password: 'Degree@2026',
     division: 'IT SOLUTION',
     position: 'Lead FE (Frontend)',
-    email: 'ian.pramana@vascomm.co.id',
+    email: 'bintang.pradipta@degree.co.id',
     joinDate: '2025-02-04',
     status: 'active',
     passwordResetRequest: 'none'
@@ -156,13 +156,13 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
           joinDate: matchedUser.joinDate,
           status: matchedUser.status
         };
-        localStorage.setItem('vascomm_tracker_current_user', JSON.stringify(userPayload));
+        localStorage.setItem('degree_tracker_current_user', JSON.stringify(userPayload));
         onLoginSuccess(userPayload);
       } else {
         setError('Username / Email atau Kata Sandi salah.');
       }
     } catch {
-      const stored = localStorage.getItem('vascomm_tracker_users');
+      const stored = localStorage.getItem('degree_tracker_users');
       let users = [];
       if (stored) {
         try {
@@ -198,7 +198,7 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
           joinDate: matchedUser.joinDate,
           status: matchedUser.status
         };
-        localStorage.setItem('vascomm_tracker_current_user', JSON.stringify(userPayload));
+        localStorage.setItem('degree_tracker_current_user', JSON.stringify(userPayload));
         onLoginSuccess(userPayload);
       } else {
         setError('Username / Email atau Kata Sandi salah.');
@@ -285,7 +285,7 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
       setUsername(newUser.username);
       setPassword('');
     } catch (err: any) {
-      const stored = localStorage.getItem('vascomm_tracker_users');
+      const stored = localStorage.getItem('degree_tracker_users');
       let users = [];
       if (stored) {
         try {
@@ -307,7 +307,7 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
       }
 
       const updatedUsers = [...users, newUser];
-      localStorage.setItem('vascomm_tracker_users', JSON.stringify(updatedUsers));
+      localStorage.setItem('degree_tracker_users', JSON.stringify(updatedUsers));
 
       setSuccess('Pendaftaran berhasil! Silakan login.');
       setIsRegister(false);
@@ -353,7 +353,7 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
           const reqRes = await fetch('/api/users/request-reset', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: user.email || `${user.username}@vascomm.co.id` })
+            body: JSON.stringify({ email: user.email || `${user.username}@degree.co.id` })
           });
           if (reqRes.ok) {
             setForgotStatusMessage(
@@ -396,7 +396,7 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
             u.username.toLowerCase() === forgotUsername.trim().toLowerCase()
         );
         if (user) {
-          userEmail = user.email || `${user.username}@vascomm.co.id`;
+          userEmail = user.email || `${user.username}@degree.co.id`;
         }
       }
 
@@ -438,12 +438,12 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 text-xs font-semibold text-teal-200">
               <Building2 size={15} />
-              <span>Vascomm Workspace</span>
+              <span>Degree Workspace</span>
             </div>
 
             <div className="space-y-3">
               <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white leading-tight font-display">
-                Vascomm AI Learning Tracker
+                Degree AI Learning Tracker
               </h1>
               <p className="text-sm text-teal-100/85 leading-relaxed">
                 Platform pencatatan aktivitas AI pasca pelatihan, pemantauan penghematan jam kerja, dan berbagi panduan lintas divisi.
@@ -467,7 +467,7 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
           </div>
 
           <div className="pt-6 border-t border-white/15 text-xs text-teal-100/75 space-y-1">
-            <p className="font-semibold text-white">Sitamoto &amp; Vascomm Division</p>
+            <p className="font-semibold text-white">PT Degree Digital</p>
             <p>Portal Pelaporan Pembelajaran AI Internal</p>
           </div>
         </div>
@@ -559,7 +559,7 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
                           type="text"
                           value={username}
                           onChange={(e) => setUsername(e.target.value)}
-                          placeholder="Contoh: admin atau ian.pramana"
+                          placeholder="Contoh: admin atau bintang.pradipta"
                           className="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl py-2.5 pl-10 pr-4 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-hidden focus:ring-2 focus:ring-teal-600/20 focus:border-teal-600 transition"
                         />
                       </div>
@@ -655,7 +655,7 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
                           type="email"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
-                          placeholder="nama@vascomm.co.id"
+                          placeholder="nama@degree.co.id"
                           className="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl py-2.5 px-3.5 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-hidden focus:ring-2 focus:ring-teal-600/20 focus:border-teal-600"
                         />
                       </div>
